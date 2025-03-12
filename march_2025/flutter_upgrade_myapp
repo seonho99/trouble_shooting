@@ -1,8 +1,10 @@
-Flutter Upgrade를 했습니다.
+<img width="560" alt="Image" src="https://github.com/user-attachments/assets/50ff1b0c-0bb0-4e1c-a123-ce1a0675bee4" />
+
+# Flutter Upgrade를 했습니다.
 선생님의 과제 제출 폴더를 GitHub에서 Fork를 하고 제 Dart SDK를 연동했더니
 선생님의 Dart SDK는 3.7 version 이였고, 저는 3.6 version 이였습니다.
 
-<img width="1024" alt="Image" src="https://github.com/user-attachments/assets/946c67bc-8dce-4830-b134-7d6399ace1d1" />
+<img width="709" alt="Image" src="https://github.com/user-attachments/assets/27665962-e0eb-4ea2-8581-615a8dd00e7d" />
 
 Flutter Upgrade 를 안하면 돼지 않냐?
 
@@ -20,19 +22,18 @@ Flutter Upgrade 를 안하면 돼지 않냐?
 매도 일찍 맞는 매가 덜 아프다고,
 시간이 조금 널널한 지금 업그레이드 하는 편이 좋다고 판단 했습니다.
 
-<img width="1024" alt="Image" src="https://github.com/user-attachments/assets/33d764fd-ffc0-4aac-9b0a-7a35e012d451" />
+<img width="732" alt="Image" src="https://github.com/user-attachments/assets/8e5e6989-f93b-4d40-b564-ffe5189464e5" />
 
 터미널에서 `Flutter upgrade`를 하고
 Android Studio 에서 SDK 버전 확인
 
-<img width="1024" alt="Image" src="https://github.com/user-attachments/assets/684bf5f6-0664-461d-afb0-f5e36f03fc14" />
+<img width="1055" alt="Image" src="https://github.com/user-attachments/assets/75750bff-4d36-4b6e-b063-85ea002ee501" />
 
-<img width="1024" alt="Image" src="https://github.com/user-attachments/assets/33e5249f-9346-4241-9468-f762795242c7" />
 
 버전도 3.7 최신이니 이제 저의 개인 앱을 한번 보겠습니다.
 `pubspec.yaml` 도 `Pub upgrade` 해주고… 가보자!!!
 
-
+<img width="1281" alt="Image" src="https://github.com/user-attachments/assets/1c79c2c6-2041-4faf-aba9-9bfae8b34247" />
 
 … 역시나 콘솔창은
 ```bash
@@ -53,9 +54,17 @@ iPhone 16에서 애플리케이션을 실행하는 동안 오류가 발생했습
 
 ### 1️⃣ Xcode 코드를 들어가서 버전 확인 후 높은 버전으로 올렸습니다.
 
+<img width="1126" alt="Image" src="https://github.com/user-attachments/assets/c3c89917-4bab-433f-a893-5e7c6eb8ef02" />
+
 ### 2️⃣ 어제 `flutter doctor`에 `uninstall`이 생각나서 `uninstall` → `install` 했습니다.
 
+<img width="669" alt="Image" src="https://github.com/user-attachments/assets/a50d6986-48cf-4da9-b52a-8c5964562412" />
+
+<img width="670" alt="Image" src="https://github.com/user-attachments/assets/00ce246c-4c8d-4923-a60c-156222cd265c" />
+
 ### 그 후에도 Android Studio 는 동일한 에러가 나와, GPT 한테 물어보니 `Pods` 전부 지우고 다시 설치하라고 해서 진행 했습니다.
+
+<img width="938" alt="Image" src="https://github.com/user-attachments/assets/bf64a24e-4fa5-4796-a6ba-1d1b1a6932c0" />
 
 ```bash
 rm -rf Pods
@@ -66,3 +75,33 @@ pod install
 ```
 
 ### 리눅스 강의에서 `rm -rf`는 강제로 파일을 삭제하는 명령어라 함부로 사용하지 말라고 배웠지만, 두 번 `Pods` 파일을 삭제하고 `pod install` 해서 Android Studio가 정상적으로 작동했던 경험이 있어서 진행 했습니다.
+
+<img width="1361" alt="Image" src="https://github.com/user-attachments/assets/fa2e9679-fb85-432c-bbe2-ee4f56fef1d5" />
+
+```bash
+[!] CocoaPods did not set the base configuration of your project
+because your project already has a custom config set.
+In order for CocoaPods integration to work at all,
+please either set the base configurations of the target 'Runner' to
+'Target Support Files/Pods-Runner/Pods-Runner profile xcconfig' or include the
+'Target Support Files
+/Pods-Runner/Pods-Runner profile xcconfig' in your build configuration ('Flutter/Release.cconfig*).
+
+-> [프로젝트에 이미 사용자 지정 구성이 설정되어 있기 때문에 CocoaPods가 프로젝트의 기본 구성을 설정하지 않았습니다.
+CocoaPods 통합이 제대로 작동하려면 대상 'Runner'의 기본 구성을 '대상 지원 파일/팟-러너/팟-러너 프로파일 xcconfig'로 설정하거나,
+'대상 지원 파일/팟-러너'의 기본 구성에
+'타겟 지원 파일
+/Pods-Runner/Pods-Runner 프로파일 xcconfig'를 빌드 구성('Flutter/Release.cconfig*')에 포함하세요.
+```
+
+<img width="1466" alt="Image" src="https://github.com/user-attachments/assets/a89371e4-d8a0-44c9-b610-3d703fed0682" />
+
+
+### Xcode 열어서 /Pods-Runner/Pods-Runner 최신으로 올려주고
+### 재 앱을 실행시켰더니 앱이 정상적으로 나옵니다 !!
+
+<img width="917" alt="Image" src="https://github.com/user-attachments/assets/41c87c01-f57a-414e-92ce-fa2167eabd54" />
+
+### `git push` 까지
+
+<img width="739" alt="Image" src="https://github.com/user-attachments/assets/d096d324-5c25-4861-b20f-2fe6064eac17" />
