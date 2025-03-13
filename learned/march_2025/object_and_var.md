@@ -1,10 +1,16 @@
 수업 중 궁금한 내용이 생겼습니다.
 
+
+
 `Object` 와 `var` 내용을 설명해주시는데
 
 제가 알았던 두 사이의 개념이 헷갈려서 찾아보게 되었습니다.
 
+
+
 ### `Object` , `var`  공통점 & 차이점
+
+
 
 | Object | var |
 | --- | --- |
@@ -12,6 +18,8 @@
 | 👉 모든 타입의 변수 값을 담을 수 있음 | 👉 모든 타입의 변수 값을 담을 수 있음 |
 | 👉 Object 타입은 명시적으로 타입 지정 | 👉 타입을 명시하지 않고 변수를 선언할 때 사용되는 키워드 |
 | 👉 Object 는 모든 타입의 기본 타입 역할 |  |
+
+
 
 저는 자바 스터디를 2달 했었고, 자바에서 `Object` 는 최상위 부모 클래스로
 
@@ -59,15 +67,15 @@ ERROR : The name 'x' is already defined.
 ```java
 public class Main {
     public static void main(String[] args) {
-
+    
     int num1 = 10;
     int num2 = 10;
-
+    
     Integer obj1 = new Integer(10);
     Integer obj2 = new Integer(10);
-
+    
     System.out.println("obj1: " + System.identityHashCode(obj1));
-    System.out.println("obj2: " + System.identityHashCode(obj2));
+    System.out.println("obj2: " + System.identityHashCode(obj2));            
     System.out.println(obj1 == obj2);
     }
 }
@@ -120,7 +128,7 @@ public class Main {
 
 
 
-<img width="701" alt="Image" src="https://github.com/user-attachments/assets/f198ffb1-72b2-4289-9c80-4a2066da6665" />
+<img width="701" alt="Image" src="https://github.com/user-attachments/assets/f198ffb1-72b2-4289-9c80-4a2066da6665" /> 
 
 
 
@@ -129,13 +137,13 @@ void main() {
   Object o = "sss";
   var o1 = "sss";
   String s = "sss";
-
+  
   print(s.length); // String s의 길이 3
-  print(s.runtimeType); // runtime String
+  print(s.runtimeType); // runtime String 
 
   print(o1.length); // var o1의 길이 3
   print(o1.runtimeType); // runtime String
-
+  
   // print(o.length); // 에러
   print(o.runtimeType); // 코드는 Object, runtime String
 }
