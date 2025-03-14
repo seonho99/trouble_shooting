@@ -38,7 +38,7 @@ class Person {
 ```dart
 
 void main() {
-	Person p1 = Person(30);  // Person 클래스의 인스턴스 p1
+  Person p1 = Person(30);  // Person 클래스의 인스턴스 p1
   Person p2 = Person(25);  // Person 클래스의 인스턴스 p2
 }
 
