@@ -1,15 +1,20 @@
 # Dart에서 `final` 키워드 정리
-
+   
+   
+    
 코드를 보면서 헷갈렸던 `final` 부분을 정리하고 작성합니다.
-
+    
+    
 `final` 이란?
-
+     
+     
 - A final variable can be set only once;
-
+     
 → `final` 변수는 한 번만 설정할 수 있다.
-
+      
 Here's an example of creating and setting a `final` variable:
-
+       
+       
 ```dart
 final name = 'Bob'; // Without a type annotation
 final String nickname = 'Bobby';
