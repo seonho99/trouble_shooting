@@ -76,6 +76,8 @@ class Dog {
       
       
 <img width="698" alt="Image" src="https://github.com/user-attachments/assets/a13d3b98-31a2-4768-9a07-b1278d912dac" />
+         
+        
       
        
        
@@ -102,9 +104,13 @@ class Dog {
        
 **class에 instance 변수 값** 을 10 으로 지정해야 값이 변하지 않습니다.
        
+      
+       
          
         
 <img width="692" alt="Image" src="https://github.com/user-attachments/assets/c389895d-6207-4385-bdbc-ab884abc8003" />
+        
+       
          
         
        
@@ -193,10 +199,14 @@ class Dog {
        
               
  <img width="692" alt="Image" src="https://github.com/user-attachments/assets/dd46166d-91c4-4c5f-a263-eb790f7c2228" />
+      
+      
        
      
        
 <img width="600" alt="Image" src="https://github.com/user-attachments/assets/6e0c8d83-74fc-4c2c-87ba-b96333a53e5c" />
+       
+       
       
        
        
