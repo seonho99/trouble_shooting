@@ -186,25 +186,42 @@ void main() {
 The expression doesn't evaluate to a function, so it can't be invoked. (Documentation)
 표현식이 함수로 평가되지 않으므로 호출할 수 없습니다. (문서)
 ```
-
+    
+    
+    
 저는 ‘jinDo.address’가 `set mathod` , `setter` 일 줄 알고 호출 했는데
+     
 확인해보니 `getter` 였습니다.
-
+       
+    
+      
 <img width="435" alt="Image" src="https://github.com/user-attachments/assets/9f2aefbf-bcec-4243-a8a7-1d118392dd7e" />
-
+     
+    
+     
 `setter` 값을 할당해야 호출하는 문법…
+    
 
 ```dart
-void main() {
-  Dog jinDo = Dog('진도','서울 용산구 **동');
-	jinDo.address = ''; // setter 호출
-}
+set address(String value) { // 값 입력
+    if (value.length < 5 || value.isEmpty) {
+      print('주소를 입력해주세요');
+    } else {
+      print('$name의 주소는 $address입니다.');
+    }
 ```
 
+     
+      
+
 <img width="408" alt="Image" src="https://github.com/user-attachments/assets/8d3d18fd-b4e2-4c34-aa1a-4df22b8d6747" />
+     
+     
 
 그리고 `set method` 에 조건문 도 확인 할 수 있었습니다. 
-
+    
+    
+    
 ```dart
 class Dog {
   String name;
