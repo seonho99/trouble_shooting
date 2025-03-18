@@ -1,22 +1,32 @@
 # Dart getter, setter
-
+     
+     
+      
 `property` `setter` 를 연습해보고 싶어서 작성했습니다.
-
+     
+     
 https://dart.dev/language/methods : Dart 공식 문서 `Getter and Setter`
-
+    
+    
 ### Getters and setters are special methods that provide read and write access to an object's properties. Recall that each instance variable has an implicit getter, plus a setter if appropriate. You can create additional properties by implementing getters and setters, using the `get` and `set` keywords:
-
+    
+    
 - 게터와 세터는 객체의 프로퍼티에 대한 읽기 및 쓰기 액세스를 제공하는 특수 메서드입니다. 각 인스턴스 변수에는 암시적 게터와 적절한 경우 설정자가 있다는 것을 기억하세요. get 및 set 키워드를 사용하여 게터와 세터를 구현하여 추가 프로퍼티를 만들 수 있습니다:
-
+     
+     
 - 게터 객체의 프로퍼티에 대한 읽기 액세스를 제공하는 특수 메서드
 - 세터 객체의 프로퍼티에 대한 쓰기 액세스를 제공하는 특수 메서드
-
+      
+     
 저는 `gettter` , `setter` 를 사용하는 이유는
-
+     
 클라이언트 상에 데이터를 개인정보 보호 및 데이터 보안 위해 사용하는게 아닌가? 생각합니다.
-
+     
+      
 `getter` 사용방법
-
+      
+      
+     
 ```dart
 Class _Dog {}
 
@@ -32,11 +42,17 @@ class Dog {
   }
 }
 ```
-
+     
+     
+     
 - getter 는 `class` or 맴버 변수 앞에 `_` (private) 작성하며, `get` 으로 읽기가 가능합니다.
-
+    
+    
+    
 `setter` 사용방법
-
+     
+     
+     
 ```dart
 class Dog {
   String name;
@@ -52,9 +68,12 @@ class Dog {
   }
 }
 ```
-
+     
+    
+     
 - `get` 을 사용하면  `set` 사용이 가능합니다.
-
+    
+    
 ## Public
 
 ```dart
@@ -76,9 +95,11 @@ class Dog {
   }
 }
 ```
-
+    
+     
 이 코드를 Private로 한번 연습해 볼려고 합니다.
-
+    
+     
 ## Private
 
 ```dart
