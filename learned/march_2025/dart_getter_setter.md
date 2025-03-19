@@ -203,7 +203,7 @@ The expression doesn't evaluate to a function, so it can't be invoked. (Document
     
 
 ```dart
-set address(String value) { // 값 입력
+set address(String value) { // 값 입력시 조건문 사용 가능
     if (value.length < 5 || value.isEmpty) {
       print('주소를 입력해주세요');
     } else {
